@@ -14,13 +14,13 @@ body {
     background-color: #164fa5;
     padding: 20px;
     color: white;
-    display: flex; /* เพื่อให้จัดแนวกลาง */
-    justify-content: center; /* จัดกึ่งกลางแนวนอน */
+    display: flex; 
+    justify-content: center; 
 }
 
 .header h1 {
     font-size: 58px;
-    margin: 0; /* ลบ margin ออก */
+    margin: 0; 
 }
 
 main {
@@ -85,5 +85,38 @@ nav a:hover {
 @media screen and (max-width: 768px) {
     .header h1 {
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header h1 {
+        font-size: 15px;
+        margin: 0;
+    }
+    
+    main {
+        text-align: center; 
+        padding: 0 10px; 
+        margin: 0 auto; 
+    }
+
+    ul {
+        margin: 0 auto; 
+        padding: 0; 
+        list-style-position: inside; 
+        text-align: left;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    figure {
+        margin: 0 auto;
+    }
+
+    img {
+        max-width: 100%; 
+        height: auto;
     }
 }
